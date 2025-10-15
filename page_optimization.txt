@@ -1,0 +1,32 @@
+1. Large or Unoptimized Images
+
+Cause:
+Images that are too large, in the wrong format, or not compressed increase page load time.
+#Fix:
+Compress and resize images using tools like TinyPNG, ImageOptim, or use modern formats like WebP.
+Implement lazy loading so that images load only when they appear in the user’s viewport.
+Use responsive image tags (<picture> or srcset) to serve different image sizes for different devices.
+
+2. Too Many or Heavy JavaScript and CSS Files
+
+Cause:
+Multiple external scripts and style sheets block rendering and delay content display.
+#Fix:
+Minify and bundle JS and CSS files to reduce file size and HTTP requests.
+Use asynchronous (async) or deferred (defer) script loading so they don’t block HTML rendering.
+Remove unused code or libraries (known as code splitting and tree shaking).
+
+3. Slow Server Response or Lack of Caching
+
+Cause:
+Slow backend performance, unoptimized database queries, or no caching system in place.
+
+#Fix:
+Enable browser caching (store static resources locally on the client).
+Use Content Delivery Networks (CDNs) to serve files from locations closer to the user.
+Optimize server performance (e.g., enable Gzip/Brotli compression, improve database indexing, or upgrade hosting).
+
+#other optimazations ways:
+Use lazy loading for videos and iframes.
+Reduce HTTP requests by combining assets.
+Use performance monitoring tools like Google Lighthouse, PageSpeed Insights, or GTmetrix to identify and fix bottlenecks.
